@@ -1,13 +1,13 @@
 const Telegraf = require('telegraf');
-const bot = new Telegraf(''); //bot token
+const bot = new Telegraf('6135842085:AAHajfyM05SzdaawTZbgrSjK81GHguWFe0s'); //bot token
 const { read } = require('fs');
 const CharacterAI = require('./node_characterai');
 const characterAI = new CharacterAI();
-const botUsername = '@tgusername';
+const botUsername = '@yuihoshinova';
 
 (async() => {
-    await characterAI.authenticateWithToken(''); //cookie token
-    const characterId = "" //characterid token
+    await characterAI.authenticateWithToken('dyD3gE281MqgISG7FuIXYhL2WEknqZz'); //cookie token
+    const characterId = "hzbV3Qg4CmynDwy1bOeADNCFnvr-f358eZm3PDie6TU" //characterid token
     const chat = await characterAI.createOrContinueChat(characterId);
     
     bot.start((ctx) => {
