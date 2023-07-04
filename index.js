@@ -6,7 +6,7 @@ const characterAI = new CharacterAI();
 const botUsername = '@yuihoshinova';
 
 (async() => {
-    await characterAI.authenticateWithToken('dyD3gE281MqgISG7FuIXYhL2WEknqZz'); //cookie token
+    await characterAI.authenticateWithToken('eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkVqYmxXUlVCWERJX0dDOTJCa2N1YyJ9'); //cookie token
     const characterId = "hzbV3Qg4CmynDwy1bOeADNCFnvr-f358eZm3PDie6TU" //characterid token
     const chat = await characterAI.createOrContinueChat(characterId);
     
